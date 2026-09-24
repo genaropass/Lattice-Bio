@@ -1,0 +1,17 @@
+{
+  "total_raw_images": 2795,
+  "excluded_exact_md5": 197,
+  "manifest_total_images": 2598,
+  "development_included_images": 657,
+  "development_included_patients": 643,
+  "holdout_included_images": 193,
+  "holdout_included_patients": 162,
+  "excluded_perceptual_duplicates": 135,
+  "excluded_identity_conflicts": 2,
+  "excluded_unknown_patients": 1611,
+  "holdout_sha256_before": "85e3a856e5a1334d53084f242fff50a92c1c662fe1d4c8797053261578d2b335",
+  "holdout_sha256_after": "85e3a856e5a1334d53084f242fff50a92c1c662fe1d4c8797053261578d2b335",
+  "holdout_intact": true,
+  "patient_overlap_dev_holdout": 0,
+  "image_overlap_dev_holdout": 0
+}

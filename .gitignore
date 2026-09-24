@@ -1,0 +1,23 @@
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Raw Data and Embeddings (Large binaries)
+data/raw/
+data/processed/*.npy
+*.pdf
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

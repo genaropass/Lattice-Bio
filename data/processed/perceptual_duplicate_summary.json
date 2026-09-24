@@ -1,0 +1,12 @@
+{
+  "total_images_analyzed": 987,
+  "total_candidate_pairs": 405,
+  "candidates_same_patient": 177,
+  "candidates_cross_patient": 228,
+  "candidates_dev_holdout": 72,
+  "classified_evident_duplicate": 176,
+  "classified_possible_duplicate": 27,
+  "classified_probable_false_positive": 202,
+  "holdout_compromised": true,
+  "cross_patient_candidates": true
+}
