@@ -1,0 +1,18 @@
+{
+  "phase": "FASE 5",
+  "name": "Computational Feature Stability Configuration",
+  "created_at": "2026-09-24",
+  "seed": 42,
+  "descriptors": ["fractal_D0", "minkowski_dimension", "lacunarity_mean", "multifractal_delta_alpha", "tda_beta_0", "tda_beta_1"],
+  "perturbations": {
+    "noise_gaussian_sigma": [0.01, 0.02, 0.05, 0.10],
+    "contrast_scale": [0.8, 1.0, 1.2],
+    "brightness_offset": [-10, 0, 10],
+    "clahe_clip_limit": [1.5, 2.0, 3.0],
+    "sauvola_window_size": [11, 15, 25],
+    "resolution_scale": [1.0, 0.75, 0.50],
+    "rotation_angle_deg": [0, 90, 180, 270],
+    "translation_shift_px": [0, 2, 5]
+  },
+  "metrics": ["absolute_change", "relative_change", "cv", "icc_3_1", "failure_rate"]
+}

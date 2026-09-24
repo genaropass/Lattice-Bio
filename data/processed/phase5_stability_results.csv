@@ -1,0 +1,7 @@
+descriptor,icc_noise,icc_rotation,mean_relative_change,cv,failure_rate,total_evaluations,failures,r_trab_mean,r_trab_std,status
+fractal_D0,0.8857,1.0,0.0006,0.007,0.0,400,0,1.0477,0.0935,ROBUST
+minkowski_dimension,0.4454,1.0,0.0581,0.0495,0.0,400,0,1.0297,0.0593,UNSTABLE
+lacunarity_mean,0.9395,1.0,0.0008,0.0335,0.0,400,0,0.842,0.2581,ROBUST
+multifractal_delta_alpha,0.9274,1.0,0.0388,1.5199,0.0,400,0,1.1095,1.6872,ROBUST
+tda_beta_0,0.3834,1.0,0.4167,0.559,0.0,400,0,0.9688,0.587,UNSTABLE
+tda_beta_1,0.0,1.0,4000000.8508,0.8459,0.0,400,0,3.1898,6.6914,UNSTABLE
