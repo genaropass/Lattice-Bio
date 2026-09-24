@@ -1,0 +1,88 @@
+{
+  "phase": "F10 — Final Pipeline & Model Lock",
+  "lock_status": "LOCKED_WITH_LIMITATIONS",
+  "locked_at": "2026-09-24",
+  "version": "v1.0_final_lock",
+  "scientific_objective": "Metrological and structural characterization of paired intra-patient trabecular differences in 2D intraoral periapical radiographs.",
+  "scope": {
+    "split_used": "Development",
+    "total_development_images": 657,
+    "total_development_patients": 643,
+    "unit_of_analysis": "PATIENT",
+    "holdout_untouched": true,
+    "expected_holdout_hash": "85e3a856e5a1334d53084f242fff50a92c1c662fe1d4c8797053261578d2b335"
+  },
+  "locked_roi_definition": {
+    "ROI_A_crest": {
+      "center_x_ratio": 0.50,
+      "center_y_ratio": 0.45,
+      "patch_size_px": [64, 64]
+    },
+    "ROI_B_basal": {
+      "center_x_ratio": 0.50,
+      "center_y_ratio": 0.80,
+      "patch_size_px": [64, 64]
+    }
+  },
+  "locked_preprocessing_pipelines": {
+    "Pipeline_A_grayscale": {
+      "features": ["minkowski_dimension"],
+      "resolution_target_um": 35.0,
+      "assumed_dpi": 150.0,
+      "interpolation": "cv2.INTER_LANCZOS4",
+      "clahe_applied": false
+    },
+    "Pipeline_B_binary_topological": {
+      "features": ["fractal_D0", "multifractal_delta_alpha", "tda_beta_0"],
+      "resolution_target_um": 35.0,
+      "assumed_dpi": 150.0,
+      "interpolation": "cv2.INTER_LANCZOS4",
+      "clahe_clip_limit": 2.5,
+      "clahe_tile_grid": [8, 8],
+      "sauvola_window_size": 15,
+      "sauvola_k": 0.2
+    }
+  },
+  "locked_feature_set": {
+    "name": "SET_G_LOCKED",
+    "primary_descriptors": [
+      "fractal_D0",
+      "minkowski_dimension",
+      "multifractal_delta_alpha",
+      "tda_beta_0"
+    ],
+    "excluded_descriptors": [
+      {
+        "descriptor": "lacunarity_mean",
+        "reason": "Extreme mathematical redundancy with D0 (rho = -0.9979, VIF > 380)."
+      },
+      {
+        "descriptor": "tda_beta_1",
+        "reason": "Instability under binarization and lower robustness in F8 permutation test."
+      }
+    ]
+  },
+  "locked_relative_index": {
+    "formula": "R_trab = feature_crest / feature_basal",
+    "epsilon": 1e-6,
+    "nature": "Intra-patient/intra-image relative structural ratio"
+  },
+  "locked_policies": {
+    "outlier_policy": "Retain all valid observations in natural scale. Report median, IQR, percentiles. No arbitrary trimming or winsorization.",
+    "scaling_policy": "Keep features in their natural mathematical units. No global z-scoring or min-max normalization across patients.",
+    "digital_scale_nomenclature": "Standardized Digital Resampling Grid Target (35 um/px nominal under assumed 150 DPI detector resolution)."
+  },
+  "statistical_protocol": {
+    "primary_endpoint": "Paired intra-patient structural contrast (crest vs basal) across locked feature set SET_G_LOCKED.",
+    "secondary_endpoints": [
+      "Individual feature paired differences and CIs",
+      "R_trab relative ratio distributions",
+      "Spearman rank correlation structure"
+    ],
+    "unit_of_analysis": "PATIENT",
+    "bootstrap_iterations": 1000,
+    "confidence_level": 0.95,
+    "seed": 42
+  },
+  "one_time_holdout_firewall_rule": "After F10 lock, no methodological parameter, preprocessing choice, feature definition, exclusion criterion, statistical endpoint, or configuration may be changed based on any observation from the holdout in F11."
+}
