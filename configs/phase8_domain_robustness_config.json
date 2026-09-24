@@ -1,0 +1,40 @@
+{
+  "phase": "F8 — Domain, Shortcut, Permutation & Robustness Audit",
+  "verdict_framework": ["PASS", "PASS_WITH_LIMITATIONS", "REQUIRES_REVIEW", "FAIL"],
+  "created_at": "2026-09-24",
+  "seed": 42,
+  "scope": {
+    "split_used": "Development",
+    "total_development_images": 657,
+    "total_development_patients": 643,
+    "unit_of_analysis": "PATIENT",
+    "holdout_untouched": true,
+    "expected_holdout_hash": "85e3a856e5a1334d53084f242fff50a92c1c662fe1d4c8797053261578d2b335"
+  },
+  "permutation_parameters": {
+    "n_permutations": 1000,
+    "bootstrap_iterations": 1000,
+    "confidence_level": 0.95
+  },
+  "domain_variables": [
+    "subfolder_origin",
+    "image_width",
+    "image_height",
+    "aspect_ratio",
+    "mean_intensity",
+    "contrast_std"
+  ],
+  "sensitivity_configurations": {
+    "fractal_D0": ["full_scale", "no_min_box", "no_max_box"],
+    "minkowski_dimension": ["gaussian_noise_0.01", "gaussian_noise_0.05", "resolution_0.75"],
+    "lacunarity_mean": ["box_range_2_16", "box_range_4_32"],
+    "multifractal_delta_alpha": ["q_range_minus5_plus5", "q_range_minus3_plus3"],
+    "tda_beta": ["sauvola_w11", "sauvola_w15", "sauvola_w25"]
+  },
+  "preprocessing_ablation_controls": [
+    "Pipeline_B_default_CLAHE_2.5_Sauvola_15",
+    "Pipeline_B_no_CLAHE",
+    "Pipeline_B_Sauvola_25",
+    "Pipeline_B_Otsu_global"
+  ]
+}

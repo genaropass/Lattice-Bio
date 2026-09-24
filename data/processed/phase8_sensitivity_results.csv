@@ -1,0 +1,7 @@
+descriptor,parameter,mean_value,std_value
+tda_beta_0,sauvola_window_11,1.18,0.5546
+tda_beta_1,sauvola_window_11,12.42,12.5477
+tda_beta_0,sauvola_window_15,1.42,0.7769
+tda_beta_1,sauvola_window_15,12.42,11.1141
+tda_beta_0,sauvola_window_25,2.32,2.0634
+tda_beta_1,sauvola_window_25,11.96,9.9156
