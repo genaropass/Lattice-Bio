@@ -1,0 +1,7 @@
+removed_feature,remaining_n,remaining_mean_dz,impact_delta_dz,remaining_max_vif,vif_drop_confirmed
+fractal_D0,5,0.4039,0.0342,3.21,True
+minkowski_dimension,5,0.2805,-0.0892,400.69,False
+lacunarity_mean,5,0.398,0.0283,3.21,True
+multifractal_delta_alpha,5,0.3402,-0.0295,400.69,False
+tda_beta_0,5,0.3715,0.0018,400.69,False
+tda_beta_1,5,0.4244,0.0547,400.69,False

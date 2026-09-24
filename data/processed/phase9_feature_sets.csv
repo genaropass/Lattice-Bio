@@ -1,0 +1,8 @@
+feature_set,n_features,features,mean_cohens_dz,ci_95_lower,ci_95_upper,max_vif,redundancy_clean
+SET_A_Full,6,"fractal_D0, minkowski_dimension, lacunarity_mean, multifractal_delta_alpha, tda_beta_0, tda_beta_1",0.3697,0.3371,0.4086,400.69,False
+SET_B_No_D0,5,"minkowski_dimension, lacunarity_mean, multifractal_delta_alpha, tda_beta_0, tda_beta_1",0.4039,0.3713,0.4383,400.69,False
+SET_C_No_Lacunarity,5,"fractal_D0, minkowski_dimension, multifractal_delta_alpha, tda_beta_0, tda_beta_1",0.398,0.3661,0.4324,388.83,False
+SET_D_No_D0_No_Lacunarity,4,"minkowski_dimension, multifractal_delta_alpha, tda_beta_0, tda_beta_1",0.4478,0.4098,0.4884,3.21,True
+SET_E_Geometric_Topological,4,"fractal_D0, multifractal_delta_alpha, tda_beta_0, tda_beta_1",0.2935,0.2634,0.326,388.83,False
+SET_F_Roughness_Intensity,2,"minkowski_dimension, lacunarity_mean",0.5223,0.4718,0.5793,400.69,False
+SET_G_Robust_Subset,4,"fractal_D0, minkowski_dimension, multifractal_delta_alpha, tda_beta_0",0.4734,0.4332,0.5155,388.83,False

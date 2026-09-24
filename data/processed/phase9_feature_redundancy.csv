@@ -1,0 +1,16 @@
+feature_1,feature_2,spearman_rho,pearson_r,vif_f1,vif_f2,redundancy_status
+fractal_D0,minkowski_dimension,-0.4948,-0.6683,388.83,3.21,COMPLEMENTARY
+fractal_D0,lacunarity_mean,-0.9979,-0.9975,388.83,400.69,REDUNDANT
+fractal_D0,multifractal_delta_alpha,-0.6734,-0.4175,388.83,2.42,COMPLEMENTARY
+fractal_D0,tda_beta_0,-0.5781,-0.2929,388.83,2.68,COMPLEMENTARY
+fractal_D0,tda_beta_1,-0.8697,-0.7872,388.83,2.96,COMPLEMENTARY
+minkowski_dimension,lacunarity_mean,0.4842,0.6465,3.21,400.69,COMPLEMENTARY
+minkowski_dimension,multifractal_delta_alpha,-0.1209,-0.1123,3.21,2.42,COMPLEMENTARY
+minkowski_dimension,tda_beta_0,-0.0151,-0.1595,3.21,2.68,COMPLEMENTARY
+minkowski_dimension,tda_beta_1,0.527,0.6477,3.21,2.96,COMPLEMENTARY
+lacunarity_mean,multifractal_delta_alpha,0.682,0.4504,400.69,2.42,COMPLEMENTARY
+lacunarity_mean,tda_beta_0,0.5903,0.3391,400.69,2.68,COMPLEMENTARY
+lacunarity_mean,tda_beta_1,0.8724,0.785,400.69,2.96,COMPLEMENTARY
+multifractal_delta_alpha,tda_beta_0,0.6576,0.6599,2.42,2.68,COMPLEMENTARY
+multifractal_delta_alpha,tda_beta_1,0.5839,0.3193,2.42,2.96,COMPLEMENTARY
+tda_beta_0,tda_beta_1,0.4981,0.245,2.68,2.96,COMPLEMENTARY
