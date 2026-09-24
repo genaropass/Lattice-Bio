@@ -4,3 +4,4 @@ EXP-002,2026-09-21,Full Images (2795),DINOv2 140x140,DINOv2 (384),XGBoost,Random
 EXP-003,2026-09-21,Full Images (2795),Concatenado,Hybrid (400),XGBoost,Random OOF,source_dataset,0.9996,INVALID,DeLong en OOF conc. + Data leakage
 EXP-004,2026-09-22,Full Images (2795),Full Image,Hybrid (400),XGBoost,100% Train,source_dataset,0.9997,INVALID,Evaluacion sobre datos de entrenamiento
 EXP-005,2026-09-22,ROIs 64x64 (400),Parche Interdental,Math (13),XGBoost,Random 5-Fold,source_dataset,0.7437,PROVISIONAL,"Muestra reduccion de sesgo, requiere GroupKFold"
+EXP-F7-001,2026-09-24,Development Included (657 img / 643 pts),Pipeline-A/Pipeline-B (F6.1 Frozen),"Math Descriptors (D0, DM, Lambda, Delta_alpha, beta0, beta1) + R_trab",None (Descriptive Clean Benchmark),Development Only (Holdout Intact),No Clinical Target Available (Structural Characterization Only),N/A,VALID,Clean scientific benchmark established without leakage or holdout contamination
