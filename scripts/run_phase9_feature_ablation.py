@@ -220,21 +220,21 @@ print("1. Spearman rho = -0.9979 (Redundancia estricta por ocupacion de cajas bi
 print("2. D0 presenta VIF = 388.83; Lacunarity presenta VIF = 400.69.")
 print("3. Al eliminar Lacunaridad (SET C), el VIF maximo cae de 400.69 a 3.21 (Limpio de colinealidad).")
 print("4. D0 posee mayor interpretabilidad teorica directa (dimension fractal de Hausdorff-Besicovitch).")
-print("Dictamen D0 vs Lacunaridad: CONSERVAR D0, ELIMINAR LACUNARIDAD por redundancia extrema.")
+print("Dictamen D0 vs Lacunaridad: D0 y lacunaridad presentan redundancia extrema. Lacunaridad se excluye del conjunto candidato para F10.")
 
 # 7. AUDITORIA DE TDA (BETA 0 VS BETA 1) Y MULTIFRACTAL (DELTA ALPHA)
 print("\n--- 5. AUDITORIA DE TDA Y MULTIFRACTAL ---")
-print("1. beta_1: Fallo p_perm = 0.016 en F8 y alta volatilidad ante Sauvola. ELIMINAR beta_1.")
-print("2. beta_0: p_perm = 0.000, VIF = 2.68, mide componentes conexas trabeculares. CONSERVAR beta_0.")
-print("3. Delta_alpha: p_perm = 0.000, VIF = 2.42, mide heterogeneidad multifractal. CONSERVAR Delta_alpha.")
+print("1. beta_1: Excluida provisionalmente del conjunto candidato por inestabilidad ante binarizacion y menor evidencia en F8.")
+print("2. beta_0: Retenida como candidata provisional al mostrar mayor solidez que beta_1 en contraste estructural.")
+print("3. Delta_alpha: Retenida como candidata provisional al aportar variabilidad multifractal independiente.")
 
-# 8. CONJUNTO DE FEATURES CANDIDATO SELECCIONADO PARA FASE 10
+# 8. CONJUNTO DE FEATURES CANDIDATO PROVISIONAL PARA FASE 10
 print("\n" + "=" * 50)
-print(" CONJUNTO CANDIDATO CONGELADO PARA FASE 10: SET G (ROBUST SUBSET)")
+print(" CANDIDATE FEATURE SET PROVISIONALLY SPECIFIED FOR PHASE 10: SET_G_CANDIDATE")
 print("==================================================")
-print("Features Seleccionadas: fractal_D0, minkowski_dimension, multifractal_delta_alpha, tda_beta_0")
-print("Features Eliminadas por Ablacion: lacunarity_mean (Redundancia D0), tda_beta_1 (Inestabilidad binarizacion)")
-print("VIF Maximo del Conjunto Seleccionado: < 3.5 (Libre de Colinealidad)")
+print("Features Candidatas: fractal_D0, minkowski_dimension, multifractal_delta_alpha, tda_beta_0")
+print("Features Excluidas: lacunarity_mean (Redundancia D0), tda_beta_1 (Inestabilidad binarizacion)")
+print("VIF Maximo del Conjunto Candidato: < 3.5 (Libre de Colinealidad)")
 
 # 9. Registrar Entrada en experiment_ledger.csv
 ledger_entry = {

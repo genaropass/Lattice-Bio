@@ -1,5 +1,5 @@
 {
-  "phase": "F9 — Feature Ablation & Complementarity Analysis",
+  "phase": "F9 — Feature Ablation & Complementarity Analysis (Interpretive Refinement)",
   "verdict_framework": ["PASS", "PASS_WITH_LIMITATIONS", "REQUIRES_REVIEW", "FAIL"],
   "created_at": "2026-09-24",
   "seed": 42,
@@ -22,7 +22,7 @@
     "SET_D_No_D0_No_Lacunarity": ["minkowski_dimension", "multifractal_delta_alpha", "tda_beta_0", "tda_beta_1"],
     "SET_E_Geometric_Topological": ["fractal_D0", "multifractal_delta_alpha", "tda_beta_0", "tda_beta_1"],
     "SET_F_Roughness_Intensity": ["minkowski_dimension", "lacunarity_mean"],
-    "SET_G_Robust_Subset": ["fractal_D0", "minkowski_dimension", "multifractal_delta_alpha", "tda_beta_0"]
+    "SET_G_CANDIDATE": ["fractal_D0", "minkowski_dimension", "multifractal_delta_alpha", "tda_beta_0"]
   },
   "selection_hierarchy": [
     "1. Mathematical Validity",
@@ -30,6 +30,7 @@
     "3. Domain & Preprocessing Robustness (F8)",
     "4. Non-redundancy (VIF < 10)",
     "5. Interpretability",
-    "6. Complementary Information"
-  ]
+    "6. Provisional Structural Complementarity"
+  ],
+  "provisional_candidate_set": ["fractal_D0", "minkowski_dimension", "multifractal_delta_alpha", "tda_beta_0"]
 }

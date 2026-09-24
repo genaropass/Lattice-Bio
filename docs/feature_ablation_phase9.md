@@ -7,7 +7,9 @@ El objetivo de la **Fase 9** es determinar qué descriptores matemáticos aporta
 Pregunta central resuelta:
 > **¿La combinación de descriptores matemáticos aporta información estructural complementaria o una parte importante de la señal está duplicada entre descriptores matemáticamente relacionados?**
 
-Respuesta: Existe una colinealidad casi perfecta entre $D_0$ y Lacunaridad $\Lambda$ derivada del cálculo sobre la grilla binaria. Mediante ablación Leave-One-Feature-Out (LOFO), se demuestra que eliminar Lacunaridad y $\beta_1$ purga la colinealidad ($VIF < 3.5$) manteniendo intacta la señal estructural inter-regional.
+### Nota de Clarificación Científica sobre Métricas:
+> **"The reported Cohen's dz quantifies the standardized paired structural contrast between the predefined crest and basal ROIs. It is not a predictive-performance metric and must not be interpreted as evidence of diagnostic utility."**
+> *(El Cohen's dz reportado cuantifica el contraste estructural estandarizado entre las regiones crest y basal predefinidas. No constituye una métrica de performance predictiva y no debe interpretarse como evidencia de utilidad diagnóstica.)*
 
 ---
 
@@ -46,7 +48,7 @@ Respuesta: Existe una colinealidad casi perfecta entre $D_0$ y Lacunaridad $\Lam
 
 Se evaluaron 7 configuraciones predefinidas mediante remuestreo Bootstrap a nivel paciente ($N=1,000$ iteraciones):
 
-| Feature Set | $N$ Features | Descriptores Miembros | Cohen's $d_z$ Medio | IC 95% Bootstrap | VIF Máximo | Redundancia Purgada |
+| Feature Set | $N$ Features | Descriptores Miembros | Cohen's $d_z$ Medio | IC 95% Bootstrap | VIF Máximo | VIF $< 10.0$ |
 | :--- | :---: | :--- | :---: | :---: | :---: | :---: |
 | `SET_A_Full` | 6 | $D_0, D_M, \Lambda, \Delta\alpha, \beta_0, \beta_1$ | 0.3697 | [0.3371, 0.4086] | 400.69 | NO |
 | `SET_B_No_D0` | 5 | $D_M, \Lambda, \Delta\alpha, \beta_0, \beta_1$ | 0.4039 | [0.3713, 0.4383] | 400.69 | NO |
@@ -54,7 +56,7 @@ Se evaluaron 7 configuraciones predefinidas mediante remuestreo Bootstrap a nive
 | `SET_D_No_D0_No_Lacunarity` | 4 | $D_M, \Delta\alpha, \beta_0, \beta_1$ | 0.4478 | [0.4098, 0.4884] | **3.21** | **SÍ** |
 | `SET_E_Geometric_Topological` | 4 | $D_0, \Delta\alpha, \beta_0, \beta_1$ | 0.2935 | [0.2634, 0.3260] | 388.83 | NO |
 | `SET_F_Roughness_Intensity` | 2 | $D_M, \Lambda$ | 0.5223 | [0.4718, 0.5793] | 400.69 | NO |
-| **`SET_G_Robust_Subset`** | **4** | **$D_0, D_M, \Delta\alpha, \beta_0$** | **0.4734** | **[0.4332, 0.5155]** | **3.21** | **SÍ (Seleccionado)** |
+| **`SET_G_CANDIDATE`** | **4** | **$D_0, D_M, \Delta\alpha, \beta_0$** | **0.4734** | **[0.4332, 0.5155]** | **3.21** | **SÍ (Candidato Provisional)** |
 
 ---
 
@@ -73,58 +75,55 @@ Se evaluaron 7 configuraciones predefinidas mediante remuestreo Bootstrap a nive
 
 ## 7. Dictamen $D_0$ vs Lacunaridad
 
-1. **Redundancia Estricta**: La correlación Spearman $\rho = -0.9979$ demuestra que $D_0$ y Lacunaridad miden exactamente el mismo fenómeno de ocupación de grilla binaria.
-2. **Caída de VIF**: Eliminar Lacunaridad hace caer el VIF máximo de $400.69$ a **$3.21$**.
-3. **Interpretabilidad**: $D_0$ posee mayor sustento teórico en literatura médica (dimensión fractal de Hausdorff-Besicovitch).
-4. **Dictamen**: **CONSERVAR $D_0$, ELIMINAR LACUNARIDAD**.
+1. **Redundancia Metodológica**: $D_0$ y lacunaridad presentan redundancia extrema bajo el pipeline actual ($\rho = -0.9979$).
+2. **Caída de VIF**: Eliminar lacunaridad hace caer el VIF máximo de $400.69$ a **$3.21$**.
+3. **Decisión Metodológica**: La ablación muestra que puede eliminarse lacunaridad sin deteriorar el contraste estructural descriptivo utilizado en F9, por lo que $D_0$ se conserva como candidato y lacunaridad queda fuera del conjunto candidato para F10.
 
 ---
 
 ## 8. Auditoría de TDA ($\beta_0$ vs $\beta_1$)
 
-- `tda_beta_1`: Falló la prueba de permutación estricta en F8 ($p_{\text{perm}} = 0.016$) y presenta alta volatilidad ante el tamaño de ventana de Sauvola. **ELIMINAR $\beta_1$**.
-- `tda_beta_0`: Sobrevivió permutación en F8 ($p_{\text{perm}} = 0.000$), VIF $= 2.68$, mide componentes conexas trabeculares. **CONSERVAR $\beta_0$**.
+- `tda_beta_1`: $\beta_1$ is excluded from the current candidate set because of its instability under perturbation/binarization and weaker evidence in the F8 permutation analysis. This exclusion is provisional and specific to the current pipeline and study design.
+- `tda_beta_0`: $\beta_0$ is retained as a provisional candidate because it showed stronger evidence than $\beta_1$ under the current structural contrast and robustness analyses, although its sensitivity to binarization remains a documented limitation.
 
 ---
 
-## 9. Auditoría de $\Delta\alpha$ (Multifractal)
+## 9. Auditoría de $D_M$ (Minkowski) y $\Delta\alpha$ (Multifractal)
 
-- `multifractal_delta_alpha`: $p_{\text{perm}} = 0.000$, VIF $= 2.42$. Captura la heterogeneidad del espectro multifractal de la masa trabecular de forma independiente a $D_0$ y $D_M$. **CONSERVAR $\Delta\alpha$**.
+- `minkowski_dimension`: $D_M$ showed the largest decrease in the descriptive structural contrast when removed in the current LOFO analysis ($\Delta d_z = -0.0892$), supporting its retention as a candidate feature for F10.
+- `multifractal_delta_alpha`: Retenida como candidata provisional al aportar variabilidad multifractal desacoplada de $D_0$ y $D_M$.
 
 ---
 
 ## 10. Evaluación del Índice Relativo $R_{\text{trab}}$
 
-- El ratio $R_{\text{trab}} = \frac{\text{Descriptor}(\text{Cresta})}{\text{Descriptor}(\text{Basal})}$ se mantiene como la medida intra-paciente estandarizada para las 4 features retenidas, eliminando variaciones de densidad absoluta intra-imagen.
+- Los ratios $R_{\text{trab}} = \frac{\text{Descriptor}(\text{Cresta})}{\text{Descriptor}(\text{Basal})}$ son índices relativos intra-paciente/intra-imagen. No constituyen 4 descriptores independientes adicionales, sino transformaciones relativas asociadas a los 4 descriptores principales.
 
 ---
 
 ## 11. Tabla Consolidada de Evaluación de Features (F4 a F9)
 
-| Feature | Estabilidad F5 | Robustez F8 | Redundancia | Sensibilidad | Complementariedad | Estado Final F9 |
+| Feature | Estabilidad F5 | Robustez F8 | Redundancia | Sensibilidad | Complementariedad | Estado Candidato para F10 |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **`fractal_D0`** | `ROBUST` | `PASS` ($\text{BalAcc}=0.11$) | Colineal con $\Lambda$ | Invariante rotacional | Alta ($D_0$ Hausdorff) | **RETENIDA (SET G)** |
-| **`minkowski_dimension`**| `UNSTABLE` (Ruido) | `PASS` ($p_{\text{perm}}=0.00$) | Sin colinealidad | Sensible a ruido | Alta (Rugosidad 2.5D) | **RETENIDA (SET G)** |
-| `lacunarity_mean` | `ROBUST` | `PASS` | **Extrema ($\rho = -0.998$)**| Invariante | Duplicada con $D_0$ | **ELIMINADA (Ablación)** |
-| **`multifractal_delta_alpha`**| `ROBUST` | `PASS` ($p_{\text{perm}}=0.00$) | Sin colinealidad | Sensible a $q$ extrema | Alta (Complejidad) | **RETENIDA (SET G)** |
-| **`tda_beta_0`** | `SENSITIVE` | `PASS` ($p_{\text{perm}}=0.00$) | Sin colinealidad | Moderada a binarización | Alta (Componentes) | **RETENIDA (SET G)** |
-| `tda_beta_1` | `UNSTABLE` | **No pasó $p_{\text{perm}} < 0.001$** | Sin colinealidad | Alta a Sauvola | Baja | **ELIMINADA (Ablación)** |
+| **`fractal_D0`** | `ROBUST` | `PASS` ($\text{BalAcc}=0.11$) | Colineal con $\Lambda$ | Invariante rotacional | Provisional F9 | **RETENIDA (`SET_G_CANDIDATE`)** |
+| **`minkowski_dimension`**| `UNSTABLE` (Ruido) | `PASS` ($p_{\text{perm}}=0.00$) | Sin colinealidad | Sensible a ruido | Provisional F9 | **RETENIDA (`SET_G_CANDIDATE`)** |
+| `lacunarity_mean` | `ROBUST` | `PASS` | **Extrema ($\rho = -0.998$)**| Invariante | Duplicada con $D_0$ | **EXCLUIDA (`SET_G_CANDIDATE`)** |
+| **`multifractal_delta_alpha`**| `ROBUST` | `PASS` ($p_{\text{perm}}=0.00$) | Sin colinealidad | Sensible a $q$ extrema | Provisional F9 | **RETENIDA (`SET_G_CANDIDATE`)** |
+| **`tda_beta_0`** | `SENSITIVE` | `PASS` ($p_{\text{perm}}=0.00$) | Sin colinealidad | Moderada a binarización | Provisional F9 | **RETENIDA (`SET_G_CANDIDATE`)** |
+| `tda_beta_1` | `UNSTABLE` | **No pasó $p_{\text{perm}} < 0.001$** | Sin colinealidad | Alta a Sauvola | Inestable | **EXCLUIDA (`SET_G_CANDIDATE`)** |
 
 ---
 
-## 12. Decisión sobre Feature Set Candidato para Fase 10
+## 12. Candidate Feature Set Provisionally Specified for Phase 10
 
-### Conjunto Seleccionado: **`SET G (Robust Subset)`**
+### **`SET_G_CANDIDATE`**
 
-$$\text{Candidate Feature Set} = \{ D_0, D_M, \Delta\alpha, \beta_0 \}$$
+$$\text{Provisional Candidate Feature Set for Phase 10} = \{ D_0, D_M, \Delta\alpha, \beta_0 \}$$
 
-- **Número de Features**: 4 descriptores primarios (más sus 4 ratios $R_{\text{trab}}$ correspondientes).
-- **VIF Máximo del Conjunto**: **$3.21$** (100% purgado de colinealidad).
-- **Justificación Jerárquica**:
-  1. Validez matemática demostrada en F4/F4.1.
-  2. Purga de redundancia extrema ($D_0 \leftrightarrow \Lambda$).
-  3. Eliminación de inestabilidad binarizadora ($\beta_1$).
-  4. Preservación del efecto estructural intra-paciente pareado (Cohen's $d_z = 0.4734$).
+- **Número de Descriptores Principales**: 4 descriptores matemáticos.
+- **VIF Máximo del Conjunto**: **$3.21$** (Libre de colinealidad severa).
+- **Complementariedad**: Complementariedad estructural provisional bajo el diseño descriptivo de F9.
+- **Congelamiento Definitivo**: La congelación definitiva del pipeline y conjunto final de features corresponde a la **Fase 10**.
 
 ---
 
@@ -133,8 +132,8 @@ $$\text{Candidate Feature Set} = \{ D_0, D_M, \Delta\alpha, \beta_0 \}$$
 ### Veredicto Oficial: **`PASS_WITH_LIMITATIONS`**
 
 #### Justificación
-La ablación ha resuelto definitivamente el problema de colinealidad entre $D_0$ y Lacunaridad, estableciendo un conjunto de 4 descriptores matemáticos verdaderamente complementarios ($D_0, D_M, \Delta\alpha, \beta_0$) con VIF $< 3.5$.
+F9 identifica un conjunto candidato razonable para F10 (`SET_G_CANDIDATE = {D0, DM, Delta_alpha, beta0}`); no demuestra todavía que sea el conjunto óptimo ni que tenga utilidad clínica.
 
 #### Limitaciones Documentadas:
-1. **$D_M$ en Pipeline-A**: Debe mantenerse estrictamente libre de ruido Gaussiano añadido.
-2. **$\beta_0$ en Pipeline-B**: Requiere mantener congelada la ventana Sauvola en $W=15$.
+1. **Contraste Descriptivo vs Performance Predictiva**: $Cohen's\ d_z$ cuantifica únicamente el contraste espacial relativo entre regiones Cresta y Basal.
+2. **Congelamiento Provisional**: `SET_G_CANDIDATE` es una propuesta provisional para evaluación en F10.
