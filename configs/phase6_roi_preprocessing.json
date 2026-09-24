@@ -1,0 +1,51 @@
+{
+  "version": "1.0_frozen",
+  "phase": "Phase 6 — ROI + Reproducible Preprocessing",
+  "frozen_at": "2026-09-24",
+  "anatomical_reference": {
+    "ROI_A_crest": {
+      "name": "Alveolar Crest / Interdental Trabecular Bone",
+      "description": "Coronal-cervical interproximal trabecular bone",
+      "y_center_ratio": 0.45,
+      "x_center_ratio": 0.50,
+      "default_patch_size_px": [64, 64],
+      "resampled_standard_size_px": [128, 128]
+    },
+    "ROI_B_basal": {
+      "name": "Basal Trabecular Bone Reference",
+      "description": "Lower mandibular basal trabecular bone reference",
+      "y_center_ratio": 0.80,
+      "x_center_ratio": 0.50,
+      "default_patch_size_px": [64, 64],
+      "resampled_standard_size_px": [128, 128]
+    }
+  },
+  "preprocessing_pipelines": {
+    "Pipeline_A_grayscale": {
+      "description": "Intensity-preserving representation for grayscale & surface roughness descriptors (DM, Lambda)",
+      "spatial_resolution_target_um": 35.0,
+      "source_dpi": 150.0,
+      "interpolation": "cv2.INTER_LANCZOS4",
+      "normalization": "minmax_0_1",
+      "clahe_applied": false
+    },
+    "Pipeline_B_binary_topological": {
+      "description": "Adaptive binarized representation for fractal & topological descriptors (D0, Delta_alpha, beta0, beta1)",
+      "spatial_resolution_target_um": 35.0,
+      "source_dpi": 150.0,
+      "interpolation": "cv2.INTER_LANCZOS4",
+      "clahe_clip_limit": 2.5,
+      "clahe_tile_grid": [8, 8],
+      "sauvola_window_size": 15,
+      "sauvola_k": 0.2,
+      "threshold_method": "sauvola"
+    }
+  },
+  "exclusion_and_quality_rules": {
+    "min_roi_height_px": 16,
+    "min_roi_width_px": 16,
+    "max_nan_or_inf_pixels": 0,
+    "min_valid_pixel_ratio": 0.95,
+    "allow_empty_roi": false
+  }
+}
