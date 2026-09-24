@@ -1,0 +1,47 @@
+{
+  "phase": "F6.1 — Anatomical and Scientific ROI Validation",
+  "decision": "F6.1 CLOSED_WITH_LIMITATIONS",
+  "audit_timestamp": "2026-09-24",
+  "scope": {
+    "dataset": "Benchmark Development (657 images / 643 patients)",
+    "holdout_accessed": false,
+    "holdout_hash_verified": "85e3a856e5a1334d53084f242fff50a92c1c662fe1d4c8797053261578d2b335",
+    "modality_restriction": "Intraoral Periapical Radiographs Only"
+  },
+  "anatomical_roi_definition": {
+    "ROI_A_crest": {
+      "label": "Alveolar Crest Interdental Trabecular Reference",
+      "x_ratio": 0.50,
+      "y_ratio": 0.45,
+      "patch_size_px": [64, 64],
+      "anatomical_status_in_audit": "VALID (100% on sample)"
+    },
+    "ROI_B_basal": {
+      "label": "Basal Mandibular Trabecular Reference",
+      "x_ratio": 0.50,
+      "y_ratio": 0.80,
+      "patch_size_px": [64, 64],
+      "anatomical_status_in_audit": "VALID (100% on sample)"
+    }
+  },
+  "scale_definition": {
+    "resampling_target_pixel_um": 35.0,
+    "nominal_assumed_dpi": 150.0,
+    "terminology": "Standardized Digital Resampling Grid Target (35 um/px nominal)",
+    "physical_calibration_present": false
+  },
+  "texture_independence_confirmed": true,
+  "descriptor_preprocessing_compatibility": {
+    "fractal_D0": "COMPATIBLE_WITH_DOCUMENTATION (Pipeline-B: Sauvola Binary)",
+    "minkowski_dimension": "COMPATIBLE_WITH_DOCUMENTATION (Pipeline-A: Grayscale 2.5D)",
+    "lacunarity_mean": "COMPATIBLE_WITH_DOCUMENTATION (Pipeline-A: Grayscale)",
+    "multifractal_delta_alpha": "COMPATIBLE_WITH_DOCUMENTATION (Pipeline-B: Standardized Grid)",
+    "tda_beta_0": "COMPATIBLE_WITH_DOCUMENTATION (Pipeline-B: Sauvola Binary)",
+    "tda_beta_1": "COMPATIBLE_WITH_DOCUMENTATION (Pipeline-B: Sauvola Binary)"
+  },
+  "limitations": [
+    "Fixed relative percentages (0.50*w, 0.45*h, 0.80*h) represent a geometric intra-image reference frame, not 3D anatomical landmarks.",
+    "Scope restricted strictly to intraoral periapical radiographs; panoramic images require landmark-based ROI detection.",
+    "Pixel resolution 35 um/px is a standardized digital resampling grid target under assumed 150 DPI, not physical DICOM calibration."
+  ]
+}
