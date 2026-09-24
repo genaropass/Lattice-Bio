@@ -1,0 +1,5 @@
+descriptor,n_patients,holdout_mean_crest,holdout_mean_basal,holdout_mean_diff,holdout_cohens_dz,holdout_dz_ci_95,p_val_ttest,p_val_wilcoxon,dev_cohens_dz,direction_reproduced,magnitude_ratio_holdout_vs_dev
+fractal_D0,162,1.9191,1.9204,-0.0013,-0.2321,"[-0.4071, -0.0857]",3.5992e-03,7.3524e-06,-0.1988,YES,1.1677
+minkowski_dimension,162,2.3899,2.4906,-0.1006,-0.8656,"[-1.0559, -0.6984]",2.1572e-21,1.9184e-18,-0.8161,YES,1.0607
+multifractal_delta_alpha,162,0.4102,0.0742,0.336,0.5893,"[0.48, 0.6979]",4.0321e-12,4.8798e-23,0.5177,YES,1.1384
+tda_beta_0,162,3.1111,1.5658,1.5453,0.3303,"[0.2614, 0.4674]",4.3416e-05,2.7283e-09,0.3609,YES,0.9152

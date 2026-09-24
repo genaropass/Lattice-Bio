@@ -1,0 +1,33 @@
+{
+  "phase": "F11 — One-Time Holdout Evaluation",
+  "version": "v1.0_holdout_evaluation",
+  "evaluation_date": "2026-09-24",
+  "scientific_objective": "Evaluate out-of-sample generalizability of the frozen structural contrast pipeline SET_G_LOCKED on the reserved Holdout dataset.",
+  "locked_config_reference": "configs/final_pipeline_lock_v1.json",
+  "expected_holdout_hash": "85e3a856e5a1334d53084f242fff50a92c1c662fe1d4c8797053261578d2b335",
+  "holdout_scope": {
+    "total_images": 193,
+    "total_patients": 162,
+    "inclusion_status": "INCLUDED",
+    "unit_of_analysis": "PATIENT"
+  },
+  "locked_feature_set": [
+    "fractal_D0",
+    "minkowski_dimension",
+    "multifractal_delta_alpha",
+    "tda_beta_0"
+  ],
+  "statistical_protocol": {
+    "primary_endpoint": "Paired intra-patient structural contrast (Crest vs Basal) Cohen's dz out-of-sample.",
+    "secondary_endpoints": [
+      "Per-feature paired differences and 95% bootstrap CIs",
+      "Directionality agreement with Development (F10)",
+      "Effect size ratio (Holdout dz / Development dz)",
+      "Relative structural index R_trab distributions"
+    ],
+    "bootstrap_iterations": 1000,
+    "confidence_level": 0.95,
+    "seed": 42
+  },
+  "one_time_rule_enforced": true
+}
