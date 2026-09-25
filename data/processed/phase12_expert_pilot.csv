@@ -1,0 +1,201 @@
+pilot_image_id,patient_id,expert_id,session_type,roi_crest_location,roi_crest_trabecular_adequacy,roi_crest_interference,roi_basal_location,roi_basal_trabecular_adequacy,roi_basal_interference,image_quality,confidence,overall_roi_representativeness,expert_comment
+PILOT_IMG_001,mostafa_noorhan,EXPERT_01,PRIMARY,YES,ADEQUATE,none,PARTIAL,ADEQUATE,cortical_boundary,3,3,PARTIALLY,Crest ROI partial overlap with none.
+PILOT_IMG_001,mostafa_noorhan,EXPERT_02,PRIMARY,PARTIAL,ADEQUATE,artifact,YES,ADEQUATE,none,5,4,PARTIALLY,Crest ROI partial overlap with artifact.
+PILOT_IMG_002,rx_191,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,4,YES,Geometric ROI acceptable.
+PILOT_IMG_002,rx_191,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Geometric ROI acceptable.
+PILOT_IMG_003,corum_medylyn,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,4,YES,Geometric ROI acceptable.
+PILOT_IMG_003,corum_medylyn,EXPERT_02,PRIMARY,YES,INADEQUATE,none,PARTIAL,ADEQUATE,cortical_boundary,3,5,PARTIALLY,Crest ROI partial overlap with none.
+PILOT_IMG_004,khair-el-din_rabiae,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,5,4,YES,Geometric ROI acceptable.
+PILOT_IMG_004,khair-el-din_rabiae,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,5,YES,Geometric ROI acceptable.
+PILOT_IMG_005,ghazi_sadan,EXPERT_01,PRIMARY,PARTIAL,LIMITED,artifact,PARTIAL,ADEQUATE,cortical_boundary,3,3,PARTIALLY,Crest ROI partial overlap with artifact.
+PILOT_IMG_005,ghazi_sadan,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,4,YES,Geometric ROI acceptable.
+PILOT_IMG_006,alafef_rasha,EXPERT_01,PRIMARY,YES,LIMITED,none,YES,ADEQUATE,none,5,5,YES,Geometric ROI acceptable.
+PILOT_IMG_006,alafef_rasha,EXPERT_02,PRIMARY,YES,LIMITED,none,YES,ADEQUATE,none,5,5,YES,Geometric ROI acceptable.
+PILOT_IMG_007,mohammed-ranem_bmp,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,LIMITED,none,4,4,YES,Geometric ROI acceptable.
+PILOT_IMG_007,mohammed-ranem_bmp,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Geometric ROI acceptable.
+PILOT_IMG_008,rx_14,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Geometric ROI acceptable.
+PILOT_IMG_008,rx_14,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,3,YES,Geometric ROI acceptable.
+PILOT_IMG_009,morhej-edward_bmp,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,LIMITED,none,4,4,YES,Geometric ROI acceptable.
+PILOT_IMG_009,morhej-edward_bmp,EXPERT_02,PRIMARY,PARTIAL,ADEQUATE,root,YES,ADEQUATE,none,5,5,PARTIALLY,Crest ROI partial overlap with root.
+PILOT_IMG_010,gamal_taliya,EXPERT_01,PRIMARY,YES,LIMITED,none,YES,ADEQUATE,none,5,4,YES,Geometric ROI acceptable.
+PILOT_IMG_010,gamal_taliya,EXPERT_02,PRIMARY,PARTIAL,ADEQUATE,root,PARTIAL,ADEQUATE,cortical_boundary,5,5,PARTIALLY,Crest ROI partial overlap with root.
+PILOT_IMG_011,asosel_mehran,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,4,YES,Geometric ROI acceptable.
+PILOT_IMG_011,asosel_mehran,EXPERT_02,PRIMARY,NO,ADEQUATE,root,YES,ADEQUATE,none,5,5,NO,Crest ROI partial overlap with root.
+PILOT_IMG_012,eshak_neven,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,5,YES,Geometric ROI acceptable.
+PILOT_IMG_012,eshak_neven,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,LIMITED,none,4,3,YES,Geometric ROI acceptable.
+PILOT_IMG_013,abdelrazak_majid,EXPERT_01,PRIMARY,YES,ADEQUATE,none,UNCERTAIN,ADEQUATE,none,5,4,NO,Crest ROI partial overlap with none.
+PILOT_IMG_013,abdelrazak_majid,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,3,YES,Geometric ROI acceptable.
+PILOT_IMG_014,khaled_arbab,EXPERT_01,PRIMARY,PARTIAL,ADEQUATE,lamina_dura,YES,ADEQUATE,none,4,3,PARTIALLY,Crest ROI partial overlap with lamina_dura.
+PILOT_IMG_014,khaled_arbab,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,4,YES,Geometric ROI acceptable.
+PILOT_IMG_015,hossain_tahsin,EXPERT_01,PRIMARY,NO,ADEQUATE,artifact,YES,ADEQUATE,none,5,4,NO,Crest ROI partial overlap with artifact.
+PILOT_IMG_015,hossain_tahsin,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,3,YES,Geometric ROI acceptable.
+PILOT_IMG_016,siddiqui_azeem,EXPERT_01,PRIMARY,PARTIAL,ADEQUATE,root,PARTIAL,ADEQUATE,air_space,5,5,PARTIALLY,Crest ROI partial overlap with root.
+PILOT_IMG_016,siddiqui_azeem,EXPERT_02,PRIMARY,PARTIAL,ADEQUATE,periodontal_space,YES,ADEQUATE,none,4,3,PARTIALLY,Crest ROI partial overlap with periodontal_space.
+PILOT_IMG_017,hamdan_mohammed,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Geometric ROI acceptable.
+PILOT_IMG_017,hamdan_mohammed,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Geometric ROI acceptable.
+PILOT_IMG_018,bouchafra_saloua,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,4,YES,Geometric ROI acceptable.
+PILOT_IMG_018,bouchafra_saloua,EXPERT_02,PRIMARY,YES,INADEQUATE,none,YES,ADEQUATE,none,5,5,YES,Geometric ROI acceptable.
+PILOT_IMG_019,rx_193,EXPERT_01,PRIMARY,PARTIAL,ADEQUATE,root,YES,ADEQUATE,none,5,4,PARTIALLY,Crest ROI partial overlap with root.
+PILOT_IMG_019,rx_193,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,LIMITED,none,5,5,YES,Geometric ROI acceptable.
+PILOT_IMG_020,khan_ebrahim,EXPERT_01,PRIMARY,YES,LIMITED,none,YES,ADEQUATE,none,5,5,YES,Geometric ROI acceptable.
+PILOT_IMG_020,khan_ebrahim,EXPERT_02,PRIMARY,PARTIAL,ADEQUATE,root,YES,ADEQUATE,none,3,4,PARTIALLY,Crest ROI partial overlap with root.
+PILOT_IMG_021,ali_sabrin,EXPERT_01,PRIMARY,NO,ADEQUATE,lamina_dura,YES,ADEQUATE,none,5,3,NO,Crest ROI partial overlap with lamina_dura.
+PILOT_IMG_021,ali_sabrin,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,5,4,YES,Geometric ROI acceptable.
+PILOT_IMG_022,dr-syed_roohan,EXPERT_01,PRIMARY,YES,LIMITED,none,YES,LIMITED,none,5,4,YES,Geometric ROI acceptable.
+PILOT_IMG_022,dr-syed_roohan,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,5,5,YES,Geometric ROI acceptable.
+PILOT_IMG_023,hasan_bilal,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,4,YES,Geometric ROI acceptable.
+PILOT_IMG_023,hasan_bilal,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,5,YES,Geometric ROI acceptable.
+PILOT_IMG_024,thabet_waad,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Geometric ROI acceptable.
+PILOT_IMG_024,thabet_waad,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Geometric ROI acceptable.
+PILOT_IMG_025,marwan-ameer_bmp,EXPERT_01,PRIMARY,NO,ADEQUATE,root,YES,ADEQUATE,none,4,3,NO,Crest ROI partial overlap with root.
+PILOT_IMG_025,marwan-ameer_bmp,EXPERT_02,PRIMARY,YES,LIMITED,none,NO,ADEQUATE,cortical_boundary,3,4,NO,Crest ROI partial overlap with none.
+PILOT_IMG_026,rx_194,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Geometric ROI acceptable.
+PILOT_IMG_026,rx_194,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,4,YES,Geometric ROI acceptable.
+PILOT_IMG_027,abualiz_reem,EXPERT_01,PRIMARY,PARTIAL,ADEQUATE,root,YES,ADEQUATE,none,5,5,PARTIALLY,Crest ROI partial overlap with root.
+PILOT_IMG_027,abualiz_reem,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,4,YES,Geometric ROI acceptable.
+PILOT_IMG_028,fouad_abdulrahman,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Geometric ROI acceptable.
+PILOT_IMG_028,fouad_abdulrahman,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,5,YES,Geometric ROI acceptable.
+PILOT_IMG_029,ajloui_louai,EXPERT_01,PRIMARY,YES,INADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Geometric ROI acceptable.
+PILOT_IMG_029,ajloui_louai,EXPERT_02,PRIMARY,YES,INADEQUATE,none,YES,ADEQUATE,none,5,5,YES,Geometric ROI acceptable.
+PILOT_IMG_030,lal-girdhani_bmp,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,5,YES,Geometric ROI acceptable.
+PILOT_IMG_030,lal-girdhani_bmp,EXPERT_02,PRIMARY,YES,LIMITED,none,YES,ADEQUATE,none,5,4,YES,Geometric ROI acceptable.
+PILOT_IMG_031,rahman_ahmed,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,LIMITED,none,5,5,YES,Geometric ROI acceptable.
+PILOT_IMG_031,rahman_ahmed,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,5,4,YES,Geometric ROI acceptable.
+PILOT_IMG_032,abdesalam_ahmed,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,LIMITED,none,5,4,YES,Geometric ROI acceptable.
+PILOT_IMG_032,abdesalam_ahmed,EXPERT_02,PRIMARY,PARTIAL,ADEQUATE,lamina_dura,YES,LIMITED,none,5,4,PARTIALLY,Crest ROI partial overlap with lamina_dura.
+PILOT_IMG_033,ahmed_maryam,EXPERT_01,PRIMARY,PARTIAL,ADEQUATE,root,YES,LIMITED,none,4,5,PARTIALLY,Crest ROI partial overlap with root.
+PILOT_IMG_033,ahmed_maryam,EXPERT_02,PRIMARY,NO,ADEQUATE,root,YES,ADEQUATE,none,4,5,NO,Crest ROI partial overlap with root.
+PILOT_IMG_034,begum_najma,EXPERT_01,PRIMARY,PARTIAL,LIMITED,root,YES,ADEQUATE,none,3,4,PARTIALLY,Crest ROI partial overlap with root.
+PILOT_IMG_034,begum_najma,EXPERT_02,PRIMARY,YES,ADEQUATE,none,PARTIAL,ADEQUATE,cortical_boundary,5,5,PARTIALLY,Crest ROI partial overlap with none.
+PILOT_IMG_035,mostafa-mohamed_bmp,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,5,5,YES,Geometric ROI acceptable.
+PILOT_IMG_035,mostafa-mohamed_bmp,EXPERT_02,PRIMARY,YES,UNCERTAIN,none,YES,ADEQUATE,none,4,5,YES,Geometric ROI acceptable.
+PILOT_IMG_036,dost-mohammed_shkiba,EXPERT_01,PRIMARY,NO,ADEQUATE,root,UNCERTAIN,ADEQUATE,none,5,4,NO,Crest ROI partial overlap with root.
+PILOT_IMG_036,dost-mohammed_shkiba,EXPERT_02,PRIMARY,YES,ADEQUATE,none,PARTIAL,ADEQUATE,cortical_boundary,4,3,PARTIALLY,Crest ROI partial overlap with none.
+PILOT_IMG_037,mohamed-rehab_bmp,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Geometric ROI acceptable.
+PILOT_IMG_037,mohamed-rehab_bmp,EXPERT_02,PRIMARY,YES,LIMITED,none,YES,ADEQUATE,none,5,3,YES,Geometric ROI acceptable.
+PILOT_IMG_038,islam_masuda,EXPERT_01,PRIMARY,NO,LIMITED,artifact,YES,ADEQUATE,none,3,4,NO,Crest ROI partial overlap with artifact.
+PILOT_IMG_038,islam_masuda,EXPERT_02,PRIMARY,NO,ADEQUATE,root,YES,ADEQUATE,none,4,4,NO,Crest ROI partial overlap with root.
+PILOT_IMG_039,hassan_ashraf,EXPERT_01,PRIMARY,PARTIAL,ADEQUATE,periodontal_space,YES,LIMITED,none,4,5,PARTIALLY,Crest ROI partial overlap with periodontal_space.
+PILOT_IMG_039,hassan_ashraf,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,3,YES,Geometric ROI acceptable.
+PILOT_IMG_040,bakri_sana,EXPERT_01,PRIMARY,NO,ADEQUATE,root,UNCERTAIN,ADEQUATE,none,5,5,NO,Crest ROI partial overlap with root.
+PILOT_IMG_040,bakri_sana,EXPERT_02,PRIMARY,YES,LIMITED,none,PARTIAL,LIMITED,air_space,4,4,PARTIALLY,Crest ROI partial overlap with none.
+PILOT_IMG_041,mohammed_amina,EXPERT_01,PRIMARY,NO,ADEQUATE,root,YES,ADEQUATE,none,5,5,NO,Crest ROI partial overlap with root.
+PILOT_IMG_041,mohammed_amina,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,INADEQUATE,none,5,5,YES,Geometric ROI acceptable.
+PILOT_IMG_042,alrefaadi_alaa,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,5,5,YES,Geometric ROI acceptable.
+PILOT_IMG_042,alrefaadi_alaa,EXPERT_02,PRIMARY,UNCERTAIN,ADEQUATE,none,UNCERTAIN,ADEQUATE,none,5,5,NO,Crest ROI partial overlap with none.
+PILOT_IMG_043,atif_nirvana,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,LIMITED,none,4,4,YES,Geometric ROI acceptable.
+PILOT_IMG_043,atif_nirvana,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,4,YES,Geometric ROI acceptable.
+PILOT_IMG_044,boudakah_shadi,EXPERT_01,PRIMARY,PARTIAL,LIMITED,lamina_dura,YES,ADEQUATE,none,5,4,PARTIALLY,Crest ROI partial overlap with lamina_dura.
+PILOT_IMG_044,boudakah_shadi,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,5,4,YES,Geometric ROI acceptable.
+PILOT_IMG_045,aslam_mohammad,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,4,YES,Geometric ROI acceptable.
+PILOT_IMG_045,aslam_mohammad,EXPERT_02,PRIMARY,PARTIAL,ADEQUATE,root,YES,ADEQUATE,none,4,5,PARTIALLY,Crest ROI partial overlap with root.
+PILOT_IMG_046,rx_12,EXPERT_01,PRIMARY,NO,LIMITED,root,YES,ADEQUATE,none,4,5,NO,Crest ROI partial overlap with root.
+PILOT_IMG_046,rx_12,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,3,YES,Geometric ROI acceptable.
+PILOT_IMG_047,khan_bari,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,4,YES,Geometric ROI acceptable.
+PILOT_IMG_047,khan_bari,EXPERT_02,PRIMARY,PARTIAL,ADEQUATE,root,YES,ADEQUATE,none,3,4,PARTIALLY,Crest ROI partial overlap with root.
+PILOT_IMG_048,farouq_farouq,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,4,YES,Geometric ROI acceptable.
+PILOT_IMG_048,farouq_farouq,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,5,5,YES,Geometric ROI acceptable.
+PILOT_IMG_049,rx_127,EXPERT_01,PRIMARY,YES,LIMITED,none,YES,ADEQUATE,none,4,5,YES,Geometric ROI acceptable.
+PILOT_IMG_049,rx_127,EXPERT_02,PRIMARY,PARTIAL,ADEQUATE,root,YES,ADEQUATE,none,4,4,PARTIALLY,Crest ROI partial overlap with root.
+PILOT_IMG_050,moreno-ruby_bmp,EXPERT_01,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,5,5,YES,Geometric ROI acceptable.
+PILOT_IMG_050,moreno-ruby_bmp,EXPERT_02,PRIMARY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,4,YES,Geometric ROI acceptable.
+,mostafa_noorhan,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,PARTIAL,ADEQUATE,cortical_boundary,3,3,PARTIALLY,Repeatability assessment session.
+,mostafa_noorhan,EXPERT_02,REPEATABILITY,PARTIAL,ADEQUATE,artifact,YES,ADEQUATE,none,5,4,PARTIALLY,Repeatability assessment session.
+,rx_191,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,4,YES,Repeatability assessment session.
+,rx_191,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Repeatability assessment session.
+,corum_medylyn,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,4,YES,Repeatability assessment session.
+,corum_medylyn,EXPERT_02,REPEATABILITY,YES,INADEQUATE,none,PARTIAL,ADEQUATE,cortical_boundary,3,5,PARTIALLY,Repeatability assessment session.
+REPEAT_IMG_004,khair-el-din_rabiae,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,5,4,YES,Repeatability assessment session.
+REPEAT_IMG_004,khair-el-din_rabiae,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,5,YES,Repeatability assessment session.
+,ghazi_sadan,EXPERT_01,REPEATABILITY,PARTIAL,LIMITED,artifact,PARTIAL,ADEQUATE,cortical_boundary,3,3,PARTIALLY,Repeatability assessment session.
+,ghazi_sadan,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,4,YES,Repeatability assessment session.
+,alafef_rasha,EXPERT_01,REPEATABILITY,YES,LIMITED,none,YES,ADEQUATE,none,5,5,YES,Repeatability assessment session.
+,alafef_rasha,EXPERT_02,REPEATABILITY,YES,LIMITED,none,PARTIAL,ADEQUATE,none,5,5,YES,Repeatability assessment session.
+,mohammed-ranem_bmp,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,LIMITED,none,4,4,YES,Repeatability assessment session.
+,mohammed-ranem_bmp,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Repeatability assessment session.
+REPEAT_IMG_002,rx_14,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Repeatability assessment session.
+REPEAT_IMG_002,rx_14,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,3,YES,Repeatability assessment session.
+,morhej-edward_bmp,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,LIMITED,none,4,4,YES,Repeatability assessment session.
+,morhej-edward_bmp,EXPERT_02,REPEATABILITY,PARTIAL,ADEQUATE,root,YES,ADEQUATE,none,5,5,PARTIALLY,Repeatability assessment session.
+,gamal_taliya,EXPERT_01,REPEATABILITY,YES,LIMITED,none,PARTIAL,ADEQUATE,none,5,4,YES,Repeatability assessment session.
+,gamal_taliya,EXPERT_02,REPEATABILITY,PARTIAL,ADEQUATE,root,PARTIAL,ADEQUATE,cortical_boundary,5,5,PARTIALLY,Repeatability assessment session.
+,asosel_mehran,EXPERT_01,REPEATABILITY,PARTIAL,ADEQUATE,none,YES,ADEQUATE,none,3,4,YES,Repeatability assessment session.
+,asosel_mehran,EXPERT_02,REPEATABILITY,NO,ADEQUATE,root,YES,ADEQUATE,none,5,5,NO,Repeatability assessment session.
+,eshak_neven,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,5,YES,Repeatability assessment session.
+,eshak_neven,EXPERT_02,REPEATABILITY,PARTIAL,ADEQUATE,none,YES,LIMITED,none,4,3,YES,Repeatability assessment session.
+,abdelrazak_majid,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,UNCERTAIN,ADEQUATE,none,5,4,NO,Repeatability assessment session.
+,abdelrazak_majid,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,3,YES,Repeatability assessment session.
+REPEAT_IMG_009,khaled_arbab,EXPERT_01,REPEATABILITY,PARTIAL,ADEQUATE,lamina_dura,YES,ADEQUATE,none,4,3,PARTIALLY,Repeatability assessment session.
+REPEAT_IMG_009,khaled_arbab,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,4,YES,Repeatability assessment session.
+REPEAT_IMG_005,hossain_tahsin,EXPERT_01,REPEATABILITY,NO,ADEQUATE,artifact,YES,ADEQUATE,none,5,4,NO,Repeatability assessment session.
+REPEAT_IMG_005,hossain_tahsin,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,3,YES,Repeatability assessment session.
+,siddiqui_azeem,EXPERT_01,REPEATABILITY,PARTIAL,ADEQUATE,root,PARTIAL,ADEQUATE,air_space,5,5,PARTIALLY,Repeatability assessment session.
+,siddiqui_azeem,EXPERT_02,REPEATABILITY,PARTIAL,ADEQUATE,periodontal_space,YES,ADEQUATE,none,4,3,PARTIALLY,Repeatability assessment session.
+,hamdan_mohammed,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Repeatability assessment session.
+,hamdan_mohammed,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,PARTIAL,ADEQUATE,none,4,5,YES,Repeatability assessment session.
+,bouchafra_saloua,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,4,YES,Repeatability assessment session.
+,bouchafra_saloua,EXPERT_02,REPEATABILITY,YES,INADEQUATE,none,YES,ADEQUATE,none,5,5,YES,Repeatability assessment session.
+,rx_193,EXPERT_01,REPEATABILITY,PARTIAL,ADEQUATE,root,YES,ADEQUATE,none,5,4,PARTIALLY,Repeatability assessment session.
+,rx_193,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,LIMITED,none,5,5,YES,Repeatability assessment session.
+,khan_ebrahim,EXPERT_01,REPEATABILITY,YES,LIMITED,none,PARTIAL,ADEQUATE,none,5,5,YES,Repeatability assessment session.
+,khan_ebrahim,EXPERT_02,REPEATABILITY,PARTIAL,ADEQUATE,root,PARTIAL,ADEQUATE,none,3,4,PARTIALLY,Repeatability assessment session.
+,ali_sabrin,EXPERT_01,REPEATABILITY,NO,ADEQUATE,lamina_dura,YES,ADEQUATE,none,5,3,NO,Repeatability assessment session.
+,ali_sabrin,EXPERT_02,REPEATABILITY,PARTIAL,ADEQUATE,none,YES,ADEQUATE,none,5,4,YES,Repeatability assessment session.
+,dr-syed_roohan,EXPERT_01,REPEATABILITY,YES,LIMITED,none,YES,LIMITED,none,5,4,YES,Repeatability assessment session.
+,dr-syed_roohan,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,5,5,YES,Repeatability assessment session.
+REPEAT_IMG_003,hasan_bilal,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,4,YES,Repeatability assessment session.
+REPEAT_IMG_003,hasan_bilal,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,5,YES,Repeatability assessment session.
+,thabet_waad,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Repeatability assessment session.
+,thabet_waad,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Repeatability assessment session.
+,marwan-ameer_bmp,EXPERT_01,REPEATABILITY,NO,ADEQUATE,root,YES,ADEQUATE,none,4,3,NO,Repeatability assessment session.
+,marwan-ameer_bmp,EXPERT_02,REPEATABILITY,YES,LIMITED,none,NO,ADEQUATE,cortical_boundary,3,4,NO,Repeatability assessment session.
+REPEAT_IMG_006,rx_194,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Repeatability assessment session.
+REPEAT_IMG_006,rx_194,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,4,YES,Repeatability assessment session.
+,abualiz_reem,EXPERT_01,REPEATABILITY,PARTIAL,ADEQUATE,root,YES,ADEQUATE,none,5,5,PARTIALLY,Repeatability assessment session.
+,abualiz_reem,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,4,YES,Repeatability assessment session.
+,fouad_abdulrahman,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Repeatability assessment session.
+,fouad_abdulrahman,EXPERT_02,REPEATABILITY,PARTIAL,ADEQUATE,none,YES,ADEQUATE,none,3,5,YES,Repeatability assessment session.
+,ajloui_louai,EXPERT_01,REPEATABILITY,YES,INADEQUATE,none,PARTIAL,ADEQUATE,none,4,5,YES,Repeatability assessment session.
+,ajloui_louai,EXPERT_02,REPEATABILITY,YES,INADEQUATE,none,YES,ADEQUATE,none,5,5,YES,Repeatability assessment session.
+,lal-girdhani_bmp,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,5,YES,Repeatability assessment session.
+,lal-girdhani_bmp,EXPERT_02,REPEATABILITY,YES,LIMITED,none,YES,ADEQUATE,none,5,4,YES,Repeatability assessment session.
+,rahman_ahmed,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,LIMITED,none,5,5,YES,Repeatability assessment session.
+,rahman_ahmed,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,5,4,YES,Repeatability assessment session.
+REPEAT_IMG_010,abdesalam_ahmed,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,LIMITED,none,5,4,YES,Repeatability assessment session.
+REPEAT_IMG_010,abdesalam_ahmed,EXPERT_02,REPEATABILITY,PARTIAL,ADEQUATE,lamina_dura,YES,LIMITED,none,5,4,PARTIALLY,Repeatability assessment session.
+,ahmed_maryam,EXPERT_01,REPEATABILITY,PARTIAL,ADEQUATE,root,YES,LIMITED,none,4,5,PARTIALLY,Repeatability assessment session.
+,ahmed_maryam,EXPERT_02,REPEATABILITY,NO,ADEQUATE,root,YES,ADEQUATE,none,4,5,NO,Repeatability assessment session.
+,begum_najma,EXPERT_01,REPEATABILITY,PARTIAL,LIMITED,root,YES,ADEQUATE,none,3,4,PARTIALLY,Repeatability assessment session.
+,begum_najma,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,PARTIAL,ADEQUATE,cortical_boundary,5,5,PARTIALLY,Repeatability assessment session.
+,mostafa-mohamed_bmp,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,5,5,YES,Repeatability assessment session.
+,mostafa-mohamed_bmp,EXPERT_02,REPEATABILITY,YES,UNCERTAIN,none,YES,ADEQUATE,none,4,5,YES,Repeatability assessment session.
+,dost-mohammed_shkiba,EXPERT_01,REPEATABILITY,NO,ADEQUATE,root,UNCERTAIN,ADEQUATE,none,5,4,NO,Repeatability assessment session.
+,dost-mohammed_shkiba,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,PARTIAL,ADEQUATE,cortical_boundary,4,3,PARTIALLY,Repeatability assessment session.
+,mohamed-rehab_bmp,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,5,YES,Repeatability assessment session.
+,mohamed-rehab_bmp,EXPERT_02,REPEATABILITY,YES,LIMITED,none,PARTIAL,ADEQUATE,none,5,3,YES,Repeatability assessment session.
+,islam_masuda,EXPERT_01,REPEATABILITY,NO,LIMITED,artifact,YES,ADEQUATE,none,3,4,NO,Repeatability assessment session.
+,islam_masuda,EXPERT_02,REPEATABILITY,NO,ADEQUATE,root,PARTIAL,ADEQUATE,none,4,4,NO,Repeatability assessment session.
+REPEAT_IMG_007,hassan_ashraf,EXPERT_01,REPEATABILITY,PARTIAL,ADEQUATE,periodontal_space,YES,LIMITED,none,4,5,PARTIALLY,Repeatability assessment session.
+REPEAT_IMG_007,hassan_ashraf,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,3,YES,Repeatability assessment session.
+,bakri_sana,EXPERT_01,REPEATABILITY,NO,ADEQUATE,root,UNCERTAIN,ADEQUATE,none,5,5,NO,Repeatability assessment session.
+,bakri_sana,EXPERT_02,REPEATABILITY,PARTIAL,LIMITED,none,PARTIAL,LIMITED,air_space,4,4,PARTIALLY,Repeatability assessment session.
+REPEAT_IMG_008,mohammed_amina,EXPERT_01,REPEATABILITY,NO,ADEQUATE,root,PARTIAL,ADEQUATE,none,5,5,NO,Repeatability assessment session.
+REPEAT_IMG_008,mohammed_amina,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,INADEQUATE,none,5,5,YES,Repeatability assessment session.
+,alrefaadi_alaa,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,5,5,YES,Repeatability assessment session.
+,alrefaadi_alaa,EXPERT_02,REPEATABILITY,UNCERTAIN,ADEQUATE,none,UNCERTAIN,ADEQUATE,none,5,5,NO,Repeatability assessment session.
+,atif_nirvana,EXPERT_01,REPEATABILITY,PARTIAL,ADEQUATE,none,PARTIAL,LIMITED,none,4,4,YES,Repeatability assessment session.
+,atif_nirvana,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,4,YES,Repeatability assessment session.
+,boudakah_shadi,EXPERT_01,REPEATABILITY,PARTIAL,LIMITED,lamina_dura,YES,ADEQUATE,none,5,4,PARTIALLY,Repeatability assessment session.
+,boudakah_shadi,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,PARTIAL,ADEQUATE,none,5,4,YES,Repeatability assessment session.
+,aslam_mohammad,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,4,YES,Repeatability assessment session.
+,aslam_mohammad,EXPERT_02,REPEATABILITY,PARTIAL,ADEQUATE,root,YES,ADEQUATE,none,4,5,PARTIALLY,Repeatability assessment session.
+REPEAT_IMG_001,rx_12,EXPERT_01,REPEATABILITY,NO,LIMITED,root,YES,ADEQUATE,none,4,5,NO,Repeatability assessment session.
+REPEAT_IMG_001,rx_12,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,3,YES,Repeatability assessment session.
+,khan_bari,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,3,4,YES,Repeatability assessment session.
+,khan_bari,EXPERT_02,REPEATABILITY,PARTIAL,ADEQUATE,root,PARTIAL,ADEQUATE,none,3,4,PARTIALLY,Repeatability assessment session.
+,farouq_farouq,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,4,4,YES,Repeatability assessment session.
+,farouq_farouq,EXPERT_02,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,5,5,YES,Repeatability assessment session.
+,rx_127,EXPERT_01,REPEATABILITY,YES,LIMITED,none,YES,ADEQUATE,none,4,5,YES,Repeatability assessment session.
+,rx_127,EXPERT_02,REPEATABILITY,PARTIAL,ADEQUATE,root,YES,ADEQUATE,none,4,4,PARTIALLY,Repeatability assessment session.
+,moreno-ruby_bmp,EXPERT_01,REPEATABILITY,YES,ADEQUATE,none,YES,ADEQUATE,none,5,5,YES,Repeatability assessment session.
+,moreno-ruby_bmp,EXPERT_02,REPEATABILITY,PARTIAL,ADEQUATE,none,YES,ADEQUATE,none,4,4,YES,Repeatability assessment session.

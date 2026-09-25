@@ -1,0 +1,64 @@
+{
+  "phase": "F12 — Expert Pilot & Anatomical Interpretability Validation",
+  "version": "v1.0_expert_pilot",
+  "locked_pipeline_reference": "configs/final_pipeline_lock_v1.json",
+  "holdout_reference": "configs/phase11_holdout_evaluation.json",
+  "objective": "Evaluate anatomical interpretability, spatial validity, and trabecular adequacy of geometric ROIs without modifying the frozen pipeline or clinical endpoints.",
+  "sampling_protocol": {
+    "source_split": "Development Included",
+    "sample_size": 50,
+    "unit_of_analysis": "IMAGE",
+    "sampling_method": "Stratified random sampling across image sources",
+    "random_seed": 42,
+    "feature_values_used_for_sampling": false
+  },
+  "experts": [
+    {
+      "expert_id": "EXPERT_01",
+      "expert_role": "Oral & Maxillofacial Radiologist",
+      "relevant_experience": "12 years experience in intraoral radiographic interpretation and trabecular analysis"
+    },
+    {
+      "expert_id": "EXPERT_02",
+      "expert_role": "Periodontist & Dental Anatomist",
+      "relevant_experience": "9 years clinical and academic experience in alveolar bone anatomy"
+    }
+  ],
+  "blinding_rules": {
+    "blind_features": true,
+    "blind_model_outputs": true,
+    "blind_f11_results": true,
+    "blind_clinical_labels": true,
+    "blind_source_dataset": true,
+    "display_panels_only": ["Original Radiograph (Panel A)", "Radiograph with ROI Crest and Basal Overlays (Panel B)"]
+  },
+  "repeatability_subset": {
+    "enabled": true,
+    "percentage": 0.20,
+    "sample_size": 10,
+    "repeat_seed": 1042,
+    "session_delay_declared": true
+  },
+  "evaluation_form_schema": {
+    "roi_location_options": ["YES", "PARTIAL", "NO", "UNCERTAIN"],
+    "roi_trabecular_adequacy_options": ["ADEQUATE", "LIMITED", "INADEQUATE", "UNCERTAIN"],
+    "interference_categories": [
+      "root",
+      "lamina_dura",
+      "periodontal_space",
+      "crown",
+      "restoration",
+      "implant",
+      "air_space",
+      "cortical_boundary",
+      "artifact",
+      "other",
+      "none"
+    ],
+    "image_quality_scale": [1, 2, 3, 4, 5],
+    "confidence_scale": [1, 2, 3, 4, 5],
+    "overall_representativeness_options": ["YES", "PARTIALLY", "NO", "UNCERTAIN"]
+  },
+  "pipeline_modification_permitted": false,
+  "holdout_reanalysis_permitted": false
+}

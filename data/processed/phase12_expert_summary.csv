@@ -1,0 +1,13 @@
+metric,value
+total_pilot_images,50.0
+total_expert_evaluations,100.0
+experts_count,2.0
+roi_crest_yes_pct,70.0
+roi_crest_usable_pct,88.0
+roi_basal_yes_pct,87.0
+roi_basal_usable_pct,95.0
+inter_rater_kappa_crest_location,-0.0647
+inter_rater_kappa_basal_location,0.0678
+inter_rater_kappa_overall,0.0998
+intra_rater_kappa_expert_01,0.1248
+intra_rater_kappa_expert_02,0.1949
