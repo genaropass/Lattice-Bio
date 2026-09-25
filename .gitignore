@@ -16,6 +16,10 @@ data/raw/
 data/processed/*.npy
 *.pdf
 
+# Private scientific research / manuscript / paper material
+PRIVATE_RESEARCH/
+paper/
+
 # IDE and OS
 .idea/
 .vscode/
